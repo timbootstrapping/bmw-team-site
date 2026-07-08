@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QR-Codes &middot; HTmB 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy: #14213D;
+    --bg: #F5F6F8;
+    --card: #FFFFFF;
+    --border: #E4E7EC;
+    --muted: #667085;
+    --accent: #1C69D4;
+  }
+
+  *{ box-sizing: border-box; }
+
+  body{
+    margin: 0;
+    background: var(--bg);
+    color: var(--navy);
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  main{
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+
+  header{ text-align: center; margin-bottom: 44px; }
+
+  h1{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 6vw, 3.1rem);
+    letter-spacing: 0.02em;
+    margin: 0 0 14px;
+  }
+
+  .bar{
+    width: 64px;
+    height: 4px;
+    background: var(--accent);
+    border-radius: 2px;
+    margin: 0 auto 22px;
+  }
+
+  header p{ color: var(--muted); margin: 0 auto; max-width: 460px; line-height: 1.55; }
+
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+
+  .card{
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 28px 24px 24px;
+    text-align: center;
+  }
+
+  .card img{
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  .label{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin: 16px 0 4px;
+  }
+
+  .sub{ color: var(--muted); font-size: 0.86rem; margin-bottom: 4px; }
+
+  footer{ text-align: center; margin-top: 48px; color: var(--muted); font-size: 0.8rem; }
+
+  @media (max-width: 520px){
+    main{ padding: 40px 16px 64px; }
+    .grid{ grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>QR-CODES</h1>
+    <div class="bar"></div>
+    <p>Zwei Codes f&uuml;r die Folie &ndash; einfach abfotografieren oder aus dem Ordner <b>qr/</b> in die Pr&auml;sentation ziehen.</p>
+  </header>
+
+  <div class="grid">
+    <div class="card">
+      <img src="qr/qr-team.png" alt="QR-Code Team-Seite">
+      <div class="label">Team</div>
+      <div class="sub">Meet the Team &ndash; LinkedIn-Profile</div>
+    </div>
+    <div class="card">
+      <img src="qr/qr-download.png" alt="QR-Code Download-Seite">
+      <div class="label">Download</div>
+      <div class="sub">Pr&auml;sentation als PDF</div>
+    </div>
+  </div>
+
+  <footer> Hochschule Landshut × BMW | 2026</footer>
+</main>
+</body>
+</html>

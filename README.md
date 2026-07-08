@@ -49,6 +49,27 @@ durch:
 
 Diesen Link dann in einen QR-Code umwandeln (z. B. auf qr-code-generator.com) und auf der Team-Folie platzieren.
 
+## Download-Seite & QR-Codes
+
+Zusätzlich zur Team-Seite (`index.html`) gibt es eine Download-Seite (`download.html`) mit einem Button, über den die Präsentation als PDF heruntergeladen wird.
+
+**PDF ablegen:** Lege die Präsentation exakt unter diesem Namen ab:
+
+```
+downloads/praesentation.pdf
+```
+
+Sobald die Datei dort liegt, funktioniert der Download-Button automatisch – im Code muss nichts geändert werden. (Heißt deine Datei anders, benenne sie einfach in `praesentation.pdf` um, oder passe den `href` in `download.html` an.)
+
+**Zwei QR-Codes** liegen fertig im Ordner `qr/`:
+
+- `qr/qr-team.png` → Team-Seite (`https://timbootstrapping.github.io/bmw-team-site/`)
+- `qr/qr-download.png` → Download-Seite (`https://timbootstrapping.github.io/bmw-team-site/download.html`)
+
+Diese PNGs kannst du direkt in die Präsentationsfolie ziehen. Eine Übersicht beider Codes im gleichen Design gibt es außerdem unter `qr.html`.
+
+> Hinweis: Die QR-Codes zeigen auf die oben genannten GitHub-Pages-URLs. Hostest du unter einer anderen Adresse, müssen die QR-Codes neu erzeugt werden.
+
 ## Anpassen
 
 Alles liegt in der einen Datei `index.html`, Struktur pro Person ist immer der gleiche Block:

@@ -1,0 +1,8 @@
+Lege deine Präsentation hier ab – exakt mit diesem Dateinamen:
+
+    praesentation.pdf
+
+Also: downloads/praesentation.pdf
+
+Dann funktioniert der Download-Button auf download.html automatisch.
+Diese Hinweis-Datei kannst du danach löschen.
