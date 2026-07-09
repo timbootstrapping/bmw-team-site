@@ -1,4 +1,4 @@
-# Team LinkedIn Seite (HTmB 2026)
+# Team LinkedIn Seite
 
 Eine einzelne, statische Seite mit einer Karte pro Teammitglied. Jede Karte verlinkt auf das jeweilige LinkedIn Profil. Kein Build-Prozess, keine Abhängigkeiten außer Google Fonts, funktioniert direkt auf GitHub Pages.
 
